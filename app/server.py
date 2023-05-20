@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/hphw7r850jch1xa/deneme.pkl?dl=1'
+export_file_url = 'https://www.dropbox.com/s/cann0uiyobvr26q/export.pkl?dl=1'
 export_file_name = 'export.pkl'
 classes = ['estetikli', 'estetiksiz']
 path = Path(__file__).parent
