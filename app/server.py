@@ -10,7 +10,7 @@ from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 import pathlib  # pathlib modülünü ekleyin
 
-export_file_url = 'https://www.dropbox.com/s/bol2oddnkpbd7ws/deneme.pkl?dl=1'
+export_file_url = 'https://www.dropbox.com/s/jj8h0xxter6ixp7/export%20%281%29.pkl?dl=1'
 export_file_name = 'deneme.pkl'
 classes = ['estetikli', 'estetiksiz']
 path = pathlib.Path(__file__).parent 
