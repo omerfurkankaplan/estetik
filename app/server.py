@@ -8,11 +8,12 @@ from starlette.applications import Starlette
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
+import pathlib  # pathlib modülünü ekleyin
 
 export_file_url = 'https://www.dropbox.com/s/bol2oddnkpbd7ws/deneme.pkl?dl=1'
 export_file_name = 'deneme.pkl'
 classes = ['estetikli', 'estetiksiz']
-path = Path(__file__).parent
+path = pathlib.Path(__file__).parent 
 
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
