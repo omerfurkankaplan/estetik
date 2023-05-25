@@ -32,7 +32,7 @@ async def download_file(url, dest):
 async def setup_learner():
     await download_file(export_file_url, path / export_file_name)
     try:
-        ath = Path("/Models")
+        path = Path("/Models")
 learn_inf = load_learner(path/'export.pkl')
         return learn
     except RuntimeError as e:
